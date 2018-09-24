@@ -1,0 +1,127 @@
+html * {
+    box-sizing: border-box;
+}
+
+body {
+    color: #313d40;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #eee2d9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.survey-intro {
+    text-align: center;
+}
+
+.survey-intro__title {
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.survey-intro__description {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+.survey {
+    padding: 1em;
+    background-color: #d2d4b5;
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    border-radius: 0.25em;
+}
+
+.survey__field {
+    margin-bottom: 0.75em;
+}
+
+.survey__field:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.field-col {
+    float: left;
+    width: 50%;
+}
+
+.field-col--left {
+    text-align: right;
+    padding-right: 0.5em;
+}
+
+.field-col--right {
+    text-align: left;
+    padding-left: 0.5em;
+}
+
+.field-col--left .field-label {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 65%;
+}
+
+.survey-input {
+    font-size: 14px;
+    border: 1px solid #b9b9b9;
+    padding: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+textarea.survey-input {
+    width: 75%;
+    height: 100px;
+}
+
+.checkbox-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.checkbox-list__item {
+    padding-bottom: 5px;
+}
+
+.checkbox-list__item:last-child {
+    padding-bottom: 0;
+}
+
+.checkbox-list__item .field-label {
+    margin-left: 5px;
+}
+
+.survey__field--footer {
+    text-align: center;
+    padding-top: 0.75em;
+    margin: 0;
+}
+
+.survey-submit {
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.5em 1.5em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    background: #7fbb04;
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.survey-submit:hover {
+    background: #9fe607;
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i&amp;subset=cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <header class="survey-intro">
+            <h1 id="title" class="survey-intro__title">Feedback form</h1>
+            <p id="description" class="survey-intro__description">Please let me know how can I improve my blog</p>
+        </header>
+        <form action="javascript:void(0);" id="survey-form" class="survey">
+            <div class="survey__field">
+                <div class="field-col field-col--left">
+                    <label for="name" id="name-label" class="field-label">Name</label>
+                </div>
+                <div class="field-col field-col--right">
+                    <input type="text" class="survey-input" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+            </div>
+            <div class="survey__field">
+                <div class="field-col field-col--left">
+                    <label for="email" id="email-label" class="field-label">Email</label>
+                </div>
+                <div class="field-col field-col--right">
+                    <input type="email" class="survey-input" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+            <div class="survey__field">
+                <div class="field-col field-col--left">
+                    <label for="number" id="number-label" class="field-label">Phone number</label>
+                </div>
+                <div class="field-col field-col--right">
+                    <input type="number" class="survey-input" id="number" name="number" placeholder="Enter your phone number" min="5" max="10">
+                </div>
+            </div>
+            <div class="survey__field">
+                <div class="field-col field-col--left">
+                    <label for="dropdown" class="field-label">What's your current professional status?</label>
+                </div>
+                <div class="field-col field-col--right">
+                    <select class="survey-input" id="dropdown" name="dropdown">
+                        <option disabled>Pick a status</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="junior">Junior Dev</option>
+                        <option value="middle" selected>Middle Dev</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </div>
+            </div>
+            <div class="survey__field">
+                <div class="field-col field-col--left">
+                    <label class="field-label">Which technologies/ programming languages would you like to read about on my blog?</label>
+                </div>
+                <div class="field-col field-col--right">
+                    <ul class="checkbox-list">
+                        <li class="checkbox-list__item"><input type="checkbox" name="topics" value="html5" id="html5" class="survey-input"><label for="html5" class="field-label">HTML5</label></li>
+                        <li class="checkbox-list__item"><input type="checkbox" name="topics" value="css3" id="css3" class="survey-input"><label for="css3" class="field-label">CSS3</label></li>
+                        <li class="checkbox-list__item"><input type="checkbox" name="topics" value="javascript" id="javascript" class="survey-input"><label for="javascript" class="field-label">JavaScript</label></li>
+                        <li class="checkbox-list__item"><input type="checkbox" name="topics" value="php" id="php" class="survey-input"><label for="php" class="field-label">PHP</label></li>
+                        <li class="checkbox-list__item"><input type="checkbox" name="topics" value="mysql" id="mysql" class="survey-input"><label for="mysql" class="field-label">MySQL</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="survey__field">
+                <div class="field-col field-col--left">
+                    <label class="field-label">What would you recommend my blog to your friends?</label>
+                </div>
+                <div class="field-col field-col--right">
+                    <ul class="checkbox-list">
+                        <li class="checkbox-list__item">
+                            <input type="radio" name="recommend" value="yes" class="survey-input" id="recYes"><label for="recYes" class="field-label">Yes</label>
+                        </li>
+                        <li class="checkbox-list__item">
+                            <input type="radio" name="recommend" value="no" class="survey-input" id="recNo"><label for="recNo" class="field-label">No</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="survey__field">
+                <div class="field-col field-col--left">
+                    <label class="field-label">Do you have a message for me?</label>
+                </div>
+                <div class="field-col field-col--right">
+                    <textarea placeholder="Enter your message here" class="survey-input"></textarea>
+                </div>
+            </div>
+            <div class="survey__field survey__field--footer">
+                <button type="submit" id="submit" class="survey-submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
